@@ -186,17 +186,3 @@ Retorna la lista de todos los usuarios registrados.
   ]
 }
 ```
-
----
-
-## Prueba rápida con curl
-
-```bash
-# Crear un usuario
-curl -X POST http://localhost:3000/users \
-  -H "Content-Type: application/json" \
-  -d '{"name": "Juan Pérez", "email": "juan@ejemplo.com"}'
-
-# Listar usuarios
-curl http://localhost:3000/users
-```
