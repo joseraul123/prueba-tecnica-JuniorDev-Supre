@@ -8,8 +8,7 @@ const startServer = async () => {
   try {
     // Inicializar la tabla de usuarios al arrancar
     await initUsersTable();
-    console.log('Tabla "users" verificada/creada correctamente.');
-
+   
     app.listen(PORT, () => {
       console.log(`Servidor corriendo en http://localhost:${PORT}`);
     });
